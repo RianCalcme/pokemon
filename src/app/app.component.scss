@@ -1,0 +1,24 @@
+
+$background-image-path: '../assets/images/pokemon-background.jpg';
+$font-family: 'Roboto', sans-serif;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: $font-family;
+}
+
+body {
+  background-image: url($background-image-path);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+// Container Principal
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
