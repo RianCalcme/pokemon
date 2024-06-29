@@ -72,7 +72,7 @@ export class DeckFormComponent implements OnInit {
   }
 
   saveDeck() {
-    if (this.deck.cards.length < 1) {
+    if (this.deck.cards.length < 24 || this.deck.cards.length > 60) {
       this.message = 'O Deck deve ter entre 24 e 60 cartas.'
       this.showConfirmation();
       return;
