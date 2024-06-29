@@ -1,5 +1,5 @@
 
-$background-image-path: '../assets/images/pokemon-background.jpg';
+$background-image-path: '../assets/images/background.jpg';
 $font-family: 'Roboto', sans-serif;
 
 html, body {
@@ -8,17 +8,10 @@ html, body {
   font-family: $font-family;
 }
 
-body {
+.image {
   background-image: url($background-image-path);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-// Container Principal
-.main-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
