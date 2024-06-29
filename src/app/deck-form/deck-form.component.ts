@@ -72,7 +72,7 @@ export class DeckFormComponent implements OnInit {
   }
 
   saveDeck() {
-    if (this.deck.cards.length < 24 || this.deck.cards.length > 60) {
+    if (this.deck.cards.length < 1) {
       this.message = 'O Deck deve ter entre 24 e 60 cartas.'
       this.showConfirmation();
       return;
@@ -86,8 +86,8 @@ export class DeckFormComponent implements OnInit {
       this.deckService.updateDeck(this.deck);
     } else {
       this.deckService.addDeck(this.deck);
+      this.router.navigate(['/']);
     }
-    this.router.navigate(['/']);
   }
 
   showImage(url: string) {

@@ -18,18 +18,13 @@ export class DeckListComponent implements OnInit {
   constructor(private deckService: DeckService) { }
 
   ngOnInit(): void {
-    this.deckService.createMockDecks();
+    // this.deckService.createMockDecks();
     this.decks$ = this.deckService.getDecks();
   }
 
   showConfirmation(id: number) {
     this.showAlert = true;
     this.confirmId = id;
-    // this.decks$.subscribe(value => {
-    //   const deck = value.find(x => x.id == id)
-    //   this.deckName = deck.name;
-    //   this.message = `Tem certeza que deseja apagar o Deck: ${this.deckName}?`
-    // });
   }
 
   hideConfirmation() {
