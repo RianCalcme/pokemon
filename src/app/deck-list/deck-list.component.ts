@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DeckService } from '../services/deck-services';
+import { DeckService } from '../services/deck-service';
 import { Deck } from '../interfaces/deck';
 import { map, Observable } from 'rxjs';
 

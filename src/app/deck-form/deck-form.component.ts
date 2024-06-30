@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Card } from '../interfaces/card';
-import { DeckService } from '../services/deck-services';
+import { DeckService } from '../services/deck-service';
 
 @Component({
   selector: 'app-deck-form',

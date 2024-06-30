@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { DeckListComponent } from './deck-list/deck-list.component';
 import { DeckDetailComponent } from './deck-detail/deck-detail.component';
 import { DeckFormComponent } from './deck-form/deck-form.component';
-import { DeckService } from './services/deck-services';
+import { DeckService } from './services/deck-service';
 import { ConfirmationAlertComponent } from './shared/components/confirmation/confirmation-alert.component';
 
 @NgModule({
